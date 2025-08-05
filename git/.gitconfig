@@ -1,0 +1,9 @@
+[user]
+	name = Wei Hu
+	email = wei7expadd@gmail.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[alias]
+	info = !git --no-pager log -1 --oneline --decorate && echo && git status
