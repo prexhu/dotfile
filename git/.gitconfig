@@ -6,4 +6,4 @@
 [init]
 	defaultBranch = main
 [alias]
-	info = !git --no-pager log -1 --oneline --decorate && echo && git status
+	info = !git --no-pager log -1 --oneline --decorate &&  git status

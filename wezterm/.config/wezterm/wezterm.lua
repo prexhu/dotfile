@@ -21,7 +21,7 @@ local config = {
 	},
 
 	adjust_window_size_when_changing_font_size = false,
-	text_background_opacity = 0.3,
+	text_background_opacity = 1,
 	default_cursor_style = "BlinkingUnderline",
 	leader = keybind.leader,
 	keys = keybind.keys,
