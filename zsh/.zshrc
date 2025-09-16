@@ -108,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias rm=trash
  # Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+#source <(fzf --zsh)
 
 
 # Key bind
@@ -116,26 +116,26 @@ source <(fzf --zsh)
 bindkey -v
 
 # <<<CUDA>>>
-export PATH=$PATH:/usr/local/cuda-12.8/bin
+#export PATH=$PATH:/usr/local/cuda-12.8/bin
 
 # <<<ROS>>>
-source /opt/ros/humble/setup.zsh
+#source /opt/ros/humble/setup.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/prexhu/.miniconda3/bin/conda' 'shell.bash' 'hook' 2>/dev/null)"
-if [ $? -eq 0 ]; then
-  eval "$__conda_setup"
-else
-  if [ -f "/home/prexhu/.miniconda3/etc/profile.d/conda.sh" ]; then
-    . "/home/prexhu/.miniconda3/etc/profile.d/conda.sh"
-  else
-    export PATH="/home/prexhu/.miniconda3/bin:$PATH"
-  fi
-fi
-unset __conda_setup
-conda deactivate
-# <<< conda initialize <<<
+#__conda_setup="$('/home/prexhu/.miniconda3/bin/conda' 'shell.bash' 'hook' 2>/dev/null)"
+#if [ $? -eq 0 ]; then
+#  eval "$__conda_setup"
+#else
+#  if [ -f "/home/prexhu/.miniconda3/etc/profile.d/conda.sh" ]; then
+#    . "/home/prexhu/.miniconda3/etc/profile.d/conda.sh"
+#  else
+#    export PATH="/home/prexhu/.miniconda3/bin:$PATH"
+#  fi
+#fi
+#unset __conda_setup
+#conda deactivate
+## <<< conda initialize <<<
 
 
 
@@ -143,34 +143,34 @@ export https_proxy=http://127.0.0.1:15732 http_proxy=http://127.0.0.1:15732 all_
 #export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
 
 
-# <<<Tex Live>>>
-export MANPATH=$MANPATH:/usr/local/texlive/2025/texmf-dist/doc/man
-export INFOPATH=$INFOPATH:/usr/local/texlive/2025/texmf-dist/doc/info
-export PATH=$PATH:/usr/local/texlive/2025/bin/x86_64-linux
+## <<<Tex Live>>>
+#export MANPATH=$MANPATH:/usr/local/texlive/2025/texmf-dist/doc/man
+#export INFOPATH=$INFOPATH:/usr/local/texlive/2025/texmf-dist/doc/info
+#export PATH=$PATH:/usr/local/texlive/2025/bin/x86_64-linux
 
-alias sysinfo=fastfetch
+#alias sysinfo=fastfetch
 
 # >>> juliaup initialize >>>
 
 # !! Contents within this block are managed by juliaup !!
 
-path=('/home/prexhu/.juliaup/bin' $path)
-export PATH
+#path=('/home/prexhu/.juliaup/bin' $path)
+#export PATH
 
 
 
 #<<<libtorch>>>
-export Torch_DIR=/home/prexhu/Downloads/libtorch
+#export Torch_DIR=/home/prexhu/Downloads/libtorch
 
 
 # <<<zellji>>>
-export PATH=$PATH:/home/prexhu/Downloads
+#export PATH=$PATH:/home/prexhu/Downloads
 
-# <<< nvm >>>
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-# <<<IsaacLab>>>
-alias isaaclab="$HOME/Documents/IsaacLab/isaaclab.sh"
+## <<< nvm >>>
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#
+#
+## <<<IsaacLab>>>
+#alias isaaclab="$HOME/Documents/IsaacLab/isaaclab.sh"

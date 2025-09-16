@@ -3,7 +3,7 @@ local keybind = require("keybind")
 local tabTheme = require("tabTheme")
 local tab_bar_theme = tabTheme.extract_tab_bar_colors_from_theme("Catppuccin Mocha")
 local config = {
-	font_size = 12,
+	font_size = 15,
 	color_scheme = "Catppuccin Mocha",
 	animation_fps = 70,
 	font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", stretch = "Normal", style = "Normal" }),
