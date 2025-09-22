@@ -14,7 +14,7 @@ local config = {
 	window_decorations = "RESIZE",
 	window_frame = tabTheme.merge_tables({
 		font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", stretch = "Normal", style = "Normal" }),
-	}, tab_bar_theme.window_frame_colors, { font_size = 10 }),
+	}, tab_bar_theme.window_frame_colors, { font_size = 13 }),
 
 	colors = {
 		tab_bar = tab_bar_theme.tab_bar_colors,
