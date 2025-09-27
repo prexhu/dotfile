@@ -116,10 +116,10 @@ source <(fzf --zsh)
 bindkey -v
 
 # <<<CUDA>>>
-export PATH=$PATH:/usr/local/cuda-12.8/bin
+#export PATH=$PATH:/usr/local/cuda-12.8/bin
 
 # <<<ROS>>>
-source /opt/ros/humble/setup.zsh
+#source /opt/ros/humble/setup.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -144,9 +144,9 @@ export https_proxy=http://127.0.0.1:15732 http_proxy=http://127.0.0.1:15732 all_
 
 
 # <<<Tex Live>>>
-export MANPATH=$MANPATH:/usr/local/texlive/2025/texmf-dist/doc/man
-export INFOPATH=$INFOPATH:/usr/local/texlive/2025/texmf-dist/doc/info
-export PATH=$PATH:/usr/local/texlive/2025/bin/x86_64-linux
+#export MANPATH=$MANPATH:/usr/local/texlive/2025/texmf-dist/doc/man
+#export INFOPATH=$INFOPATH:/usr/local/texlive/2025/texmf-dist/doc/info
+#export PATH=$PATH:/usr/local/texlive/2025/bin/x86_64-linux
 
 alias sysinfo=fastfetch
 
@@ -154,23 +154,24 @@ alias sysinfo=fastfetch
 
 # !! Contents within this block are managed by juliaup !!
 
-path=('/home/prexhu/.juliaup/bin' $path)
-export PATH
+#path=('/home/prexhu/.juliaup/bin' $path)
+#export PATH
 
 
 
 #<<<libtorch>>>
-export Torch_DIR=/home/prexhu/Downloads/libtorch
+#export Torch_DIR=/home/prexhu/Downloads/libtorch
 
 
-# <<<zellji>>>
-export PATH=$PATH:/home/prexhu/Downloads
+# <<<zellij>>>
+#export PATH=$PATH:/home/prexhu/Downloads/zellij_dir
 
 # <<< nvm >>>
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # <<<IsaacLab>>>
-alias isaaclab="$HOME/Documents/IsaacLab/isaaclab.sh"
+#alias isaaclab="$HOME/Documents/IsaacLab/isaaclab.sh"
+eval "$(starship init zsh)"
