@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local keybind = require("keybind")
-local tabTheme = require("tabTheme")
-local tab_bar_theme = tabTheme.extract_tab_bar_colors_from_theme("Catppuccin Mocha")
+local tabline = require("tabline")
+--local tab_bar_theme = tabTheme.extract_tab_bar_colors_from_theme("Catppuccin Mocha")
 local config = {
 	font_size = 15,
 	color_scheme = "Catppuccin Mocha",
@@ -12,13 +12,13 @@ local config = {
 	show_new_tab_button_in_tab_bar = false,
 	window_background_opacity = 0.7,
 	window_decorations = "RESIZE",
-	window_frame = tabTheme.merge_tables({
-		font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", stretch = "Normal", style = "Normal" }),
-	}, tab_bar_theme.window_frame_colors, { font_size = 13 }),
+	--window_frame = tabTheme.merge_tables({
+	--	font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", stretch = "Normal", style = "Normal" }),
+	--}, tab_bar_theme.window_frame_colors, { font_size = 13 }),
 
-	colors = {
-		tab_bar = tab_bar_theme.tab_bar_colors,
-	},
+	--colors = {
+	--	tab_bar = tab_bar_theme.tab_bar_colors,
+	--},
 
 	adjust_window_size_when_changing_font_size = false,
 	text_background_opacity = 1,
@@ -34,4 +34,5 @@ local config = {
 	},
 }
 
+tabline.apply_to_config(config)
 return config

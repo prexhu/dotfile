@@ -173,3 +173,5 @@ export https_proxy=http://127.0.0.1:15732 http_proxy=http://127.0.0.1:15732 all_
 #
 ## <<<IsaacLab>>>
 #alias isaaclab="$HOME/Documents/IsaacLab/isaaclab.sh"
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml

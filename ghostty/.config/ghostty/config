@@ -1,0 +1,12 @@
+keybind = ctrl+d=close_surface
+font-family="JetBrainsMono Nerd Font"
+font-style=Bold
+font-size=15
+theme = Catppuccin Mocha
+alpha-blending=native
+background-opacity=0.5
+background-opacity-cells=true
+background-blur=3
+link-url
+link-previews=true
+macos-titlebar-proxy-icon=visible
