@@ -90,5 +90,9 @@ keybind.keys = {
 			wezterm.log_error(proc_name)
 		end),
 	},
+	--{
+	--	key = "Enter",
+	--	mods = "CMD",
+	--},
 }
 return keybind
