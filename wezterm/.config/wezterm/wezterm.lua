@@ -11,7 +11,7 @@ local config = {
 	hide_tab_bar_if_only_one_tab = false,
 	show_new_tab_button_in_tab_bar = false,
 	window_background_opacity = 0.7,
-	window_decorations = "RESIZE",
+	window_decorations = "RESIZE | TITLE",
 	window_frame = tabTheme.merge_tables({
 		font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", stretch = "Normal", style = "Normal" }),
 	}, tab_bar_theme.window_frame_colors, { font_size = 10 }),

@@ -175,3 +175,8 @@ alias sysinfo=fastfetch
 # <<<IsaacLab>>>
 #alias isaaclab="$HOME/Documents/IsaacLab/isaaclab.sh"
 eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+. "$HOME/.local/bin/env"
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
