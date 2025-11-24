@@ -1,3 +1,7 @@
+# Ghostty shell integration for Bash. This should be at the top of your bashrc!
+#if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
+#  source "$GHOSTTY_RESOURCES_DIR"/shell-integration/zsh/ghostty-integration
+#fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -149,12 +153,6 @@ export https_proxy=http://127.0.0.1:15732 http_proxy=http://127.0.0.1:15732 all_
 
 #alias sysinfo=fastfetch
 
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-#path=('/home/prexhu/.juliaup/bin' $path)
-#export PATH
 
 
 
@@ -175,3 +173,13 @@ export https_proxy=http://127.0.0.1:15732 http_proxy=http://127.0.0.1:15732 all_
 #alias isaaclab="$HOME/Documents/IsaacLab/isaaclab.sh"
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/prexhu/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
+
