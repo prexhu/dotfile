@@ -1,0 +1,7 @@
+keybind = shift+alt+l=new_split:right
+keybind = shift+alt+h=new_split:down
+keybind = super+enter=toggle_maximize
+keybind = ctrl+j=goto_split:down
+keybind = ctrl+l=goto_split:right
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+k=goto_split:up
