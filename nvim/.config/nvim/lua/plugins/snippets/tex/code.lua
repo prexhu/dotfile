@@ -28,7 +28,7 @@ local k = require("luasnip.nodes.key_indexer").new_key
 ls.config.setup({ enable_autosnippets = true })
 ls.add_snippets("tex", {
   s(
-    { trig = "cdil", dirc = "Code for inlione", snippetType = "autosnippet" },
+    { trig = "cdil", dirc = "Insert Code inline", snippetType = "autosnippet" },
     { t("\\mintinline{"), i(1, "Language"), t("}|"), i(2, "Insert code"), t("|") }
   ),
 })
