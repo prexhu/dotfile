@@ -164,7 +164,7 @@ export Torch_DIR=/home/prexhu/Downloads/libtorch
 
 
 # <<<zellji>>>
-export PATH=$PATH:/home/prexhu/Downloads
+export PATH=$PATH:/home/prexhu/Downloads/zellij_dir
 
 # <<< nvm >>>
 export NVM_DIR="$HOME/.nvm"
@@ -174,3 +174,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # <<<IsaacLab>>>
 alias isaaclab="$HOME/Documents/IsaacLab/isaaclab.sh"
+alias zel=zellij
