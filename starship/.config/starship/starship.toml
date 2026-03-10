@@ -1,5 +1,6 @@
 # Inserts a blank line between shell prompts
 format = """
+$python\
 $directory\
 $git_branch\
 $git_commit\
@@ -43,3 +44,10 @@ format='[$ssh_symbol ($hostname)](red bold)'
 ignore_base=false
 symbol=" "
 format="[$symbol$environment]($style)"
+
+
+[python]
+pyenv_version_name=true
+detect_extensions=['']
+detect_files=['']
+format='\[UV\](greed) [\($virtualenv\)](purple bold) '
