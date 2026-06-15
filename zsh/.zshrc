@@ -119,7 +119,12 @@ bindkey -v
 #export PATH=$PATH:/usr/local/cuda-12.8/bin
 
 # <<<ROS>>>
-#source /opt/ros/humble/setup.zsh
+source /opt/ros/humble/setup.zsh
+#source /usr/share/colcon_cd/function/colcon_cd.sh
+#export _colcon_cd_root=/opt/ros/humble/
+## argcomplete for ros2 & colcon
+#eval "$(register-python-argcomplete3 ros2)"
+#eval "$(register-python-argcomplete3 colcon)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -180,3 +185,8 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 . "$HOME/.local/bin/env"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
+
+
+#<<<IsaacSim>>> 
+export ISAACSIM_PATH="${HOME}/Downloads/isaacsim"
+export ISAACSIM_PYTHON_EXE="${ISAACSIM_PATH}/python.sh"
