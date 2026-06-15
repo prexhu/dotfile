@@ -1,13 +1,10 @@
 [user]
 	name = Wei Hu
 	email = wei7expadd@gmail.com
+	signingkey = 152B97DB6BAA753F
 [core]
 	editor = nvim
 [init]
 	defaultBranch = main
 [alias]
 	info = !git --no-pager log -1 --oneline --decorate &&  git status
-[http]
-	proxy = http://127.0.0.1:15732
-[https]
-	proxy = http://127.0.0.1:15732
