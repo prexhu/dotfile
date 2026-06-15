@@ -1,8 +1,3 @@
-autoload -Uz compinit
-compinit
-
-alias rm=trash
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/prexhu/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -19,25 +14,8 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-export https_proxy=http://127.0.0.1:15732 http_proxy=http://127.0.0.1:15732 all_proxy=socks5://127.0.0.1:15733
-
-#eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-path=('/Users/prexhu/.juliaup/bin' $path)
-export PATH
-
-# <<< juliaup initialize <<<
-
-
-. "$HOME/.local/bin/env"
-eval "$(uv generate-shell-completion zsh)"
-eval "$(uvx --generate-shell-completion zsh)"
 
 
 ### Added by Zinit's installer
@@ -72,3 +50,32 @@ setopt promptsubst
 zinit snippet OMZT::robbyrussell
 ### End of Zinit's installer chunk
 
+autoload -Uz compinit
+compinit
+
+alias rm=trash
+
+
+
+#export https_proxy=http://127.0.0.1:15732 http_proxy=http://127.0.0.1:15732 all_proxy=socks5://127.0.0.1:15733
+
+#eval "$(starship init zsh)"
+#export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/prexhu/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
+
+
+. "$HOME/.local/bin/env"
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
+
+
+eval "$(fzf --zsh)"
