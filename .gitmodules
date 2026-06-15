@@ -1,0 +1,3 @@
+[submodule "yazi/.config/flavors"]
+	path = yazi/.config/flavors
+	url = https://github.com/yazi-rs/flavors.git
