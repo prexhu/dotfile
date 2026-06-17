@@ -1,9 +1,18 @@
 [user]
 	name = Wei Hu
 	email = wei7expadd@gmail.com
+	signingKey = 07B61F2F63F00867
 [core]
 	editor = nvim
 [init]
 	defaultBranch = main
 [alias]
 	info = !git --no-pager log -1 --oneline --decorate &&  git status
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[lfs]
+	activitytimeout = 3600
+	dialtimeout = 3600
