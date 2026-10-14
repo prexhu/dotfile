@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local keybind = {}
-function is_nvim(name)
-	return name:find("nvim")
+function is_nvim_or_tmux(name)
+	return name:find("nvim") or name:find("tmux")
 end
 
 keybind.leader = { key = "Space", mods = "SHIFT" }
@@ -21,7 +21,7 @@ keybind.keys = {
 		mods = "CTRL",
 		action = wezterm.action_callback(function(win, pane)
 			local proc_name = pane:get_foreground_process_name()
-			if is_nvim(proc_name) then
+			if is_nvim_or_tmux(proc_name) then
 				win:perform_action(wezterm.action.SendKey({ key = "k", mods = "CTRL" }), pane)
 			else
 				win:perform_action(wezterm.action.ActivatePaneDirection("Up"), pane)
@@ -33,7 +33,7 @@ keybind.keys = {
 		mods = "CTRL",
 		action = wezterm.action_callback(function(win, pane)
 			local proc_name = pane:get_foreground_process_name()
-			if is_nvim(proc_name) then
+			if is_nvim_or_tmux(proc_name) then
 				win:perform_action(wezterm.action.SendKey({ key = "j", mods = "CTRL" }), pane)
 			else
 				win:perform_action(wezterm.action.ActivatePaneDirection("Down"), pane)
@@ -46,7 +46,7 @@ keybind.keys = {
 		mods = "CTRL",
 		action = wezterm.action_callback(function(win, pane)
 			local proc_name = pane:get_foreground_process_name()
-			if is_nvim(proc_name) then
+			if is_nvim_or_tmux(proc_name) then
 				win:perform_action(wezterm.action.SendKey({ key = "h", mods = "CTRL" }), pane)
 			else
 				win:perform_action(wezterm.action.ActivatePaneDirection("Left"), pane)
@@ -59,7 +59,7 @@ keybind.keys = {
 		mods = "CTRL",
 		action = wezterm.action_callback(function(win, pane)
 			local proc_name = pane:get_foreground_process_name()
-			if is_nvim(proc_name) then
+			if is_nvim_or_tmux(proc_name) then
 				win:perform_action(wezterm.action.SendKey({ key = "l", mods = "CTRL" }), pane)
 			else
 				win:perform_action(wezterm.action.ActivatePaneDirection("Right"), pane)
