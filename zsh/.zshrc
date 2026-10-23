@@ -57,7 +57,7 @@ alias rm=trash
 
 
 
-#export https_proxy=http://127.0.0.1:15732 http_proxy=http://127.0.0.1:15732 all_proxy=socks5://127.0.0.1:15733
+export https_proxy=http://127.0.0.1:15732 https_proxy=http://127.0.0.1:15732 all_proxy=socks5://127.0.0.1:15732
 
 #eval "$(starship init zsh)"
 #export STARSHIP_CONFIG=~/.config/starship/starship.toml
@@ -73,9 +73,18 @@ export PATH
 # <<< juliaup initialize <<<
 
 
-. "$HOME/.local/bin/env"
-eval "$(uv generate-shell-completion zsh)"
-eval "$(uvx --generate-shell-completion zsh)"
+#. "$HOME/.local/bin/env"
+#eval "$(uv generate-shell-completion zsh)"
+#eval "$(uvx --generate-shell-completion zsh)"
 
 
 eval "$(fzf --zsh)"
+export PATH=$PATH:/home/god/.local/bin
+
+# >>> Codex installer >>>
+export PATH="/home/prexhu/.local/bin:$PATH"
+# <<< Codex installer <<<
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
